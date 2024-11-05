@@ -34,6 +34,25 @@ function scrollPosition(){
 
 autocall = setInterval(scrollPosition, 60);
 
+const floatButton = document.querySelector('.float');
+const pageBottom = document.querySelector('#contact');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            floatButton.style.opacity = '0';
+        } else {
+            floatButton.style.opacity = '1';    
+        }
+    });
+}, {
+    root: null, // Uses the viewport as the root
+    threshold: 0
+});
+
+observer.observe(pageBottom);
+
+
 
 
 
