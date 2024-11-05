@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="full_nav">
+            <h1>MADESH   KUMAR</h1>
+            <div>
+                <nav>
+                    <a onclick="scrollToElementWithOffset('home')">Home</a>
+                    <a onclick="scrollToElementWithOffset('skill')">Skill</a>
+                    <a onclick="scrollToElementWithOffset('project')">Project</a>
+                    <a onclick="scrollToElementWithOffset('Achivement')">Achivement</a>
+                    <a onclick="scrollToElementWithOffset('contact')">Contact</a>
+                </nav>
+            </div>
+            <a href="#contact"><button>Contact me</button></a>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div>
+                <img src="img/emoji.png" alt="Avatar" style="width:200px">
+            </div>
+            <div class="about">
+                <h1>About Me</h1>
+                <h3>Hello, I'm Madesh</h3>
+                <p>
+                    I'm a software developer with a passion for both website and Android app development. I specialize in building responsive websites and I enjoy creating intuitive, fast Android apps with Kotlin. My focus is on delivering clean, user-friendly designs that offer seamless experiences across web and mobile platforms.
+                </p>     
+                <div class="adj_button">
+                <a href="#"><button class="btn">Resume</button></a>
+                <a href="#contact"><button class="btn">Contact me</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="skill">
+            <div class="skill_progress">
+                <h1>Proficiency</h1>
+                <p>Website development 
+                    <span>HTML , CSS, JS</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <p>Android app development
+                    <span>Kotlin , JetPack Compose</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+                <p>UI/UX
+                    <span>Figma</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <p>Programming
+                    <span>Python , C</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 55%;"></div>
+                </div>
+            </div>
+            <div>
+                <img src="img/skill.png" alt="Skill" style="width:200px">
+            </div>
+        </section>
+        <section id="project">
+            <h1>My Projects</h1>
+            <div class="project_list">
+                <div class="project_box selected">
+                    <img src="img/project/My City App/My city app (1).png" alt="My City App">
+                    <div class="text">
+                        <h4>My City App</h4>
+                        <h6>Android development</h6>
+                        <p>Application to view favorite spots in my city</p>
+                        <a>Show all Projects</a>
+                    </div>
+                </div>
+                <div class="project_box">
+                    <img src="img/project/Node Frame/Home.png" alt="Node Frame">
+                    <div class="text">
+                        <h4>Node Frame</h4>
+                        <h6>Web development</h6>
+                        <p>Website for mindmap designer application with workspace prototype</p>
+                    </div>
+                </div>
+                <div class="project_box">
+                    <img src="img/project/BIT pay/index page.png" alt="Bit Pay">
+                    <div class="text">
+                        <h4>Bit Pay</h4>
+                        <h6>UI/UX Design</h6>
+                        <p>UI/UX design for payment / mobile banking application</p>
+                    </div>
+                </div>
+                <div class="project_box show_more">
+                    <a href="#home">Show More</a>
+                </div>
+            </div>
+        </section>
+        <section id="Achivement">
+            <h1>Achievements</h1>
+            <div class="container">
+                <div class="container-item">
+                    <img src="img/achivement/layout.png" alt="Achivement">
+                    <h4>Issed by : <a href="https://developers.google.com/profile/u/madesh2006">Google for Developers</a></h4>
+                    <p>"Android Basics with Compose — Architecture Components
+                        Use Architecture Components to build more complex apps."</p>
+                        <span>I have collected 15+ badges for completing my learning and successfully developed my frist android application.</span>
+                </div>
+                <div class="container-item">
+                    <img src="img/achivement/heckerRank.png" alt="Achivement">
+                    <h4>Issed by : <a href="https://www.hackerrank.com/profile/madeshkumar_vnb1">Hackerrank</a></h4>
+                    <p>"Python Silver Badge - 4 stars"</p>
+                        <span>Badges issued for solving problems in python in HackerRank.</span>
+                </div>
+                
+                <div class="container-item">
+                    <img src="img/achivement/cisco.png" alt="Achivement">
+                    <h4>Issed by : <a href="https://www.credly.com/badges/b0206675-6cba-4099-a9f4-4636532f062d/linked_in?t=si1l6f">Cisco</a></h4>
+                    <p>"
+                        Cisco verifies the earner of this badge successfully completed the Introduction to Internet of Things course."
+                        </p>
+                        <span>
+                        Invest in learning IoT skills and you can transform any business in any industry, from manufacturing to environmental conservation.
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact me</h1>
+            <div class="contact_details">
+                <div>
+                    <p>
+                        Madesh Kumar<br>
+                        Tirupathur, Tamilnadu<br>
+                        India
+                    </p>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/madesh-kumar/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABS0lEQVR4nO2ZO0oEQRRFnyhmOoKmgoHuwD0oOI2GomBm6BZMZMCFuAYzx1EXYqb4YUB7IpMjJR01U3a1HXhreAcqu13F4dXr6o+Z4zh/AtgHRsCE/2cC3AJFW4lLdBm0qYQ6/RSRsJ3UGaaIlOjzmSKSBeYiM1aRZ+AQWK3GMfBKhiI7Krdr6yiyPCXfI0ORYkq+T4Yib8AJsFaN0CMvZCgig7nILFXEEq5JyDxUZ9E6sAgsAdvAOfCeg0g4OHcb1l4BrtVFNhsXt5/cAnAvK9IGYAP4khcB5hMyV7IiwBnwVEUfgdNfskeSIsBBm/dvYEtV5C4y7SiS76mKjCPTjiP5OVWRTvPWcZGAV8R8a0XxHgl4j5j3SBTvETWsyyNKbiIl+nykiIS/p+rcpIgU6LPXKFLJDNDlIkmi9pV9KNIzZdhOyZVwHMfqfANKiIQn/4RZwwAAAABJRU5ErkJggg=="></a>
+                    <a href="https://www.instagram.com/madesh_kumar067/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACCUlEQVR4nO2YTU7CUBSFiQlMQLciOhDZgcZEwRi2JMoI0RWoLEkRdYK4AIGBTvjMi9cEXhr6/lpK0pN0Ut79OY/bc15bKOTIkSPHxgAoAS2gDwyAGf6YSa6+5C4l1fw58E7yeAOaIRvfAq5JH1eqdggCHdaHdoix0fENdIEaUA6wQWXJ1QN+Iuo1fB5YfebHwK5v0ytqVqXGIl6BokuyVsTOB28eOJGmP4BjYC/in7hwSaxkbRHd0M0rSOP/GMm9W632Q8EWwIuW5MDRJ1bqPNEEDrXaAxcCEy1JJZBPLOk8f2OjSIyAI7m3rcVMXAgsIQGfWKnzpvVDEOgkofOkQcDEJ1x1nqQJuPiEjc6TAgEnnzDVeVIg4OwTJjpPCgSsfWIhNlbnSYHA1MYntNiKFjvdNAI7WuxXFkaoZpG7noURetSW3FjkvtNi77Mio1WDvPtZkdGSHMwWMV5FQpr/1GKGazEyWdPU18nu9mTOK3LVZWz0nZ8Dp671vQnIOp8vFpe+9UMdp9XR2AZq59tJH6dtX2gacjCLg5r5s5hc2yFeaKx1Xj2MSlHU2QZ4FrNT15OSSvmtGMInYuGj877AwCdMkjjpvC8w9AmTRNY67wssfMI0YazOB2i64uITNgXW8WU61idsCLjovC/mcT7hQsRU530xjPMJHxJROu+Lqa1P5MiRI0chM/gF7nnAo6fxAr0AAAAASUVORK5CYII="></a>
+                    <a href="https://github.com/MADESH-KUMAR-M"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADHUlEQVR4nO2ZXWhPYRzHz7YQtqHR1JC31FJcKHErN7haYUy5YC4UpZT3i90wkbLkZXHhQthGWcaNGzculMJwIy/LXNC8FJNhfPSbR53+znlezjnPf0vnU6vVOf/v9/k+/+ec5/d7/kGQk5OT4wJQBiwF9gFXgSfAB+C7+pP/H6trcs8SoDQYKQDTgcPAa9zpBZqBacMZYArQCnwjPaJxGphc7BANwHuy5x2wrhgBRgFn8c8Z8fIVYhxwk+JxQzx9fBPFDPGXW8DoLIMUYznFcTqrEBs0Jm3AFuAU8DHFYB8BTcBG4FXE9fosXrG6t1Nt6N5KtSf8dAjwFqgDSkI6TRH39QFVaYLIPqGjMuIz9UA7sBVYBNQAY4AKYC6wTA22E5gR8fnGGK+TaXZs02ZXnnCOdL6bYrwGElUAquwwUeshSJPGr9lVrFTVQSYaPATp1PhJPVfmIiZVLMMU5LrBc7GLmJTZJtqyDiEAUw1vyj2BLapn0CEvgZmBJ4BdGu8OFyFpgHR0+QohSDkPDMZ4dwe2WJToOwPPAPdjvPtcREz7x3qvKYKhMXTFeA+4iPQbgjR6TREMjeF2jHe/i8hLQxC3jSkBxO9jPS4idw1Buj2HWKjxvucidAUzqzwGuaTxbXcR2m4R5AVQ7SHEauCXxnebi9h87HiQ5cbInxBfDZ4LXARLLItGVGco3+DYFAFmAectvHqcTyeBA7jxRrW8K0zdnKquZ6smSqrdH5Yee5PMUhXwpUDoObADeGZheiJq9qQrBJ7izoC03s5BlGlLgZjM3FrpDIE7GtPL4T48QrdG9eEuHEsUQhlOiHhWpHyZo649jDCUAU600JYJsaVXev7EQZShrPlCWkNV6kH1DZwDjgArLXVL1VK1oS5ViJDp8QLhT1kcPABHLUIcyiREaPYupH6D/Ku72RCiQ/espTn/vRYyGVRLaV7Sk3NgjSbERTkPyzREwUa5W3eamFGQlqL8LCcPtDruzDpIj89iNG4QFeow7XMGQfrVg1/ub8TmwVQD+0N7ivW6BparpTopGEkAtcD44R5HTk7Of8xv3/mFvPsZA/AAAAAASUVORK5CYII="></a>
+                </div>
+                <div class="mail">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA60lEQVR4nO3UTUoDQRCG4UHcKeLaP7xCIt7BoDv3Lr2Cp1ADLjxEBEW8hegVlPFnn0VWCo9EeqAZe5yQiZLFvKtmqur7uqqaybKWuQH7eNWcF/RSBuPArMhTBgUrDaawVIikgsMQe8PhFOIHeA4ao1TCGgZRJ7fYmkB4HVdR3R2265b9VNwEJ1hM5C3gOOr8HUe/CV9iNZrlKT5C8QN2otwu7kPsExfF7rCMs5TB9y1K3zoloT7Ow3nMI3ZLNXnVkpPb93MUdaOrfEXpQAAbuMYNNrMKpjaYlNag0Yj+/GfXm5FJjr36Xlv+iy+g17w5+u+FlwAAAABJRU5ErkJggg==">
+                        <p><a href="mailto:madeshkumar.vnb2006@gmail.com">madeshkumar.vnb2006@gmail.com</a></p>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABb0lEQVR4nL3VTS+eQRTG8Yem1EKpppaEsCUSfIKykPgColbsvS1sW/qStIlGdIOFxEoTSxJLK4ku6UK8hGDjS/xkZCRDHlrPfTO7OTO5/jnXmXOmUHjuhQ58RvtTiH/AGaZxiro8xcewi6a4n8FKXuK92Me7JFYRgf15AILn40XiXdGqmqyAYSzcczaLj1kBjbjEyyJnvzCRCRCF1jFwJ9aK88wWRbFOHOBVEvtdrDZZIIv4nuxHsI3KvACvcYz3SWwOa3iRF6Qr+n7TcOVYxRLK8oIMYQ9v474SmxGSWyZT+BNsSyCr0a7rmqAWk/hU0kvDV2yhOrFrLhZ+AheYx0+coO+xgDJ8w86NXUnnh2xaklh3tHUZb0qxaw/N/7gXbPwS51dbKYU/T5/wA3fDqJ95FCDp9iP8QFWhyApZxk+rPUszLuIwzK50QKIefzFYknjhNihksxGn8EKYWfHTGs0sfgfUEF9V8L0nV/H/WVdg6d77fzBJXgAAAABJRU5ErkJggg==">
+                        <p><a href="tel:+916381416788">+91 6381416788</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

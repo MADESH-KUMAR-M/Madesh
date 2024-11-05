@@ -1,0 +1,430 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    align-content: center;
+    background-color: white;
+    height: 75px;
+}
+.full_nav{
+    margin-bottom: 30px;
+    height: 50px;
+    background: linear-gradient(120deg, rgb(216, 124, 117) 0%, rgb(220, 84, 247) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: width 0.3s ease;
+    h1{
+        margin: 0;
+        color: white;
+        font-family:"Poppins", sans-serif;
+    }
+    nav{
+        background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Apply blur effect */
+        -webkit-backdrop-filter: blur(0px); 
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        padding: 10px 30px;
+        border-radius: 30px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+
+        font-family: "Poppins", sans-serif;
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+    a > button{
+        background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Apply blur effect */
+        -webkit-backdrop-filter: blur(0px); 
+
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: none;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+.only_nav{
+    width: 50%;
+    padding: 0;
+    display: inline;
+    border-radius: 30px;
+    top: 20px;
+    transition: width 1s ease, background-color 0.5s ease, box-shadow 0.5s ease ,display 0.5s ease;
+    box-shadow: none;
+    h1{
+        display: none;
+    }
+    div{
+        border-radius: 30px;
+        height: 100%;
+        background: linear-gradient(120deg, rgb(216, 124, 117) 0%, rgb(220, 84, 247) 100%);
+    }
+    nav{
+        background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Apply blur effect */
+        -webkit-backdrop-filter: blur(0px); 
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        padding: 10px 30px;
+        border-radius: 30px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+
+        font-family: "Poppins", sans-serif;
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+    a > button{
+        background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Apply blur effect */
+        -webkit-backdrop-filter: blur(0px); 
+
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: none;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    position: fixed;
+    z-index: 1000;
+    transform: translateY(-5px);
+}
+.only_nav > a{
+    display: none;
+}
+.only_nav:hover{
+    display: flex;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    a{
+        display: inline;
+    }
+    h1{
+        display: inline;
+    }
+    background: linear-gradient(120deg, rgb(216, 124, 117) 0%, rgb(220, 84, 247) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+main{
+    section{
+        margin-top: 10px;
+        width: 100vw;
+    }
+}
+#home{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin: 50px 0px;
+}
+#home > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-family: "Montserrat", sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+        }
+        h3{
+            text-align: left;
+            width: 50%;
+        }
+        p{
+            width: 60%;
+            opacity: 0.7;
+        }
+}
+.adj_button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+    /* From Uiverse.io by SujitAdroja */ 
+.btn {
+    color: white;
+    width: fit-content;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #db57eb;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .btn:hover {
+    color: #a22caf;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 160%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #db57eb;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 0%;
+  }
+
+}
+#skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0px;
+}
+#skill > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill_progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    p{
+        font-size: 16px;
+        width: 80%;
+        text-align: left;
+        font-weight: 500;
+        span{
+            opacity: 0.7;
+            font-weight: normal;
+            font-size: 12px;
+            margin-left: 15px;
+        }
+
+    }
+    h1{
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        opacity: 0.8;
+        margin: 20px 0px;
+    }
+}
+.progress{
+    width: 80%;
+    height: 20px;
+    border: 1px solid #db57eb;
+    border-radius: 10px;
+}
+.progress-bar{
+    height: 100%;
+    background-color:rgb(218, 110, 167);
+    opacity: 0.7;
+    border-radius: 10px;
+}
+.progress-bar:hover{
+    background-color: #db57eb;
+    transition: slide 1s ease;
+}
+@keyframes slide {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+#project > h1 , #Achivement > h1{
+    font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        opacity: 0.8;
+        margin: 20px 0px;
+        text-align: center;
+}
+.project_list{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.project_box{
+    position: relative;
+    padding-inline: 5%;
+    height: 300px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    place-content: center;
+    img{
+        width: 100%;
+        height: 300px;
+        opacity: 0.6;
+        display: none;
+    }
+    .text{
+        position: absolute;
+        bottom: 0;
+        z-index: 100;
+        background-color: rgb(255, 255,  255 ,0.8);
+        height:100%;
+        width: 100%;
+        padding: 5px;
+        place-content: center;
+        text-align: center;
+    }
+    h4{
+        font-size: 24px;
+        font-family: "Inter", sans-serif;
+        margin: 24px;
+    }
+    h6{
+        margin: 12px;
+        font-size: 12px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: medium;
+    }
+    p{
+        width: 280px;
+        margin: 12px;
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        text-align: left;
+    }
+}
+
+.project_box:hover{
+    padding: 0;
+    img{
+        display: block;
+    }
+    .text{
+        padding: 10px;
+    }
+}
+.show_more{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    a:hover{
+        font-weight: bold;
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: center;
+    .container-item{
+        display: flex;
+        height: 400px;
+        background-color: #dc57eb2c;
+        padding-inline: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        
+        font-family: "Inter", sans-serif;
+
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            font-size: 16px;
+        }
+        span{
+            font-size: 12px;
+        }
+    }
+    .container-item:hover{
+        transform: scale(1.1);
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+#contact{
+    background: linear-gradient(120deg, rgba(195,56,34,0.6470237753304446) 0%, rgba(213,45,253,0.8206932431175595) 100%);
+    width: auto;
+    padding: 20px;
+    margin-top: 75px;
+    color: white;
+    border-radius: 50px 50px 0px 0px;
+    h1{
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+}
+.contact_details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail{
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    column-gap: 10px;
+    p{
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    a{
+        color: white;
+    }
+    a:hover{
+        color: rgb(0, 0, 0,0.75)
+    }
+}
+.social > a > img:hover{
+    filter: invert(0.7);
+}
